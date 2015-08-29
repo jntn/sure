@@ -1,0 +1,24 @@
+{
+  "name": "sure",
+  "version": "0.0.1",
+  "description": "A command line utility to ask if you are sure. If not it will return an error code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sure",
+    "yes",
+    "no",
+    "ask"
+  ],
+  "bin": {
+    "sure": "./index.js"
+  },
+  "author": "jgranqvist@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "read": "^1.0.7"
+  }
+}
