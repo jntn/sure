@@ -1,7 +1,7 @@
 {
   "name": "sure",
-  "version": "0.0.1",
-  "description": "A command line utility to ask if you are sure. If not it will return an error code.",
+  "version": "0.0.2",
+  "description": "Asks you if you are sure. If you are not, it will return an error code. Is useful in scripts where you want a confirmation before executing.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
