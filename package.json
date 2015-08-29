@@ -12,6 +12,10 @@
     "no",
     "ask"
   ],
+  "repository": {
+    "type" : "git",
+    "url" : "git@github.com:jntn/sure.git"
+  },
   "bin": {
     "sure": "./index.js"
   },
