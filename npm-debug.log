@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/jntn/.nvm/versions/io.js/v3.2.0/bin/iojs',
+1 verbose cli   '/Users/jntn/.nvm/versions/io.js/v3.2.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@2.13.3
+3 info using node@v3.2.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/jntn/Documents/Projects/playground/sure',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/jntn/.npm/sure/0.0.2/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/jntn/.npm/sure/0.0.2/package.tgz',
+9 verbose tar pack   '/Users/jntn/Documents/Projects/playground/sure' ]
+10 verbose tarball /Users/jntn/.npm/sure/0.0.2/package.tgz
+11 verbose folder /Users/jntn/Documents/Projects/playground/sure
+12 info prepublish sure@0.0.2
+13 verbose addLocalTarball adding from inside cache /Users/jntn/.npm/sure/0.0.2/package.tgz
+14 silly cache afterAdd sure@0.0.2
+15 verbose afterAdd /Users/jntn/.npm/sure/0.0.2/package/package.json not in flight; writing
+16 verbose afterAdd /Users/jntn/.npm/sure/0.0.2/package/package.json written
+17 silly publish { name: 'sure',
+17 silly publish   version: '0.0.2',
+17 silly publish   description: 'Asks you if you are sure. If you are not, it will return an error code. Is useful in scripts where you want a confirmation before executing.',
+17 silly publish   main: 'index.js',
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   keywords: [ 'sure', 'yes', 'no', 'ask' ],
+17 silly publish   repository: { type: 'git', url: 'git+ssh://git@github.com/jntn/sure.git' },
+17 silly publish   bin: { sure: './index.js' },
+17 silly publish   author: { name: 'jgranqvist@gmail.com' },
+17 silly publish   license: 'ISC',
+17 silly publish   dependencies: { minimist: '^1.2.0', read: '^1.0.7' },
+17 silly publish   readme: '# sure\nAsks you if you are sure. If you are not, it will return an error code. Is useful in scripts where you want a confirmation before executing.\n\nFor example if you have a destructive script in package.json (when using `&&` the next command wont be run if current command exits with an error code):\n\n```json  \n"scripts": {\n  "clean": "sure && rm -rf dist",\n}\n```\n```bash\n$ npm run clean\nAre you sure? [y/n]\n...\n```\n\nCan be invoked with your own question and allowed answer:\n\n```bash\n$ sure --question "Type ok to continue." --yes "ok"\nType ok to continue.\n...\n```\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: 'f969d40c32945eba078242545163e7284122e55d',
+17 silly publish   bugs: { url: 'https://github.com/jntn/sure/issues' },
+17 silly publish   homepage: 'https://github.com/jntn/sure#readme',
+17 silly publish   _id: 'sure@0.0.2',
+17 silly publish   _shasum: '67abd8ccf08ce0171b06dac0826abe08ceac67c3',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name sure
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/sure
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/jntn/.npm/sure/0.0.2/package.tgz
+25 verbose request uri https://registry.npmjs.org/sure
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 1:48:54 PM
+28 verbose request using bearer token for auth
+29 verbose request id 56569d55df7f9965
+30 http request PUT https://registry.npmjs.org/sure
+31 http 403 https://registry.npmjs.org/sure
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Sat, 29 Aug 2015 11:48:55 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-fra1230-FRA',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1440848934.231711,VS0,VE1019' }
+33 verbose request invalidating /Users/jntn/.npm/registry.npmjs.org/sure on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 0.0.2." : sure
+35 verbose stack     at CachingRegistryClient.<anonymous> (/Users/jntn/.nvm/versions/io.js/v3.2.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+35 verbose stack     at Request._callback (/Users/jntn/.nvm/versions/io.js/v3.2.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+35 verbose stack     at Request.self.callback (/Users/jntn/.nvm/versions/io.js/v3.2.0/lib/node_modules/npm/node_modules/request/request.js:198:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (/Users/jntn/.nvm/versions/io.js/v3.2.0/lib/node_modules/npm/node_modules/request/request.js:1057:14)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (/Users/jntn/.nvm/versions/io.js/v3.2.0/lib/node_modules/npm/node_modules/request/request.js:1003:12)
+35 verbose stack     at emitNone (events.js:72:20)
+36 verbose statusCode 403
+37 verbose pkgid sure
+38 verbose cwd /Users/jntn/Documents/Projects/playground/sure
+39 error Darwin 15.0.0
+40 error argv "/Users/jntn/.nvm/versions/io.js/v3.2.0/bin/iojs" "/Users/jntn/.nvm/versions/io.js/v3.2.0/bin/npm" "publish"
+41 error node v3.2.0
+42 error npm  v2.13.3
+43 error code E403
+44 error "You cannot publish over the previously published version 0.0.2." : sure
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]

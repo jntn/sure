@@ -1,6 +1,6 @@
 {
   "name": "sure",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Asks you if you are sure. If you are not, it will return an error code. Is useful in scripts where you want a confirmation before executing.",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,10 @@
     "no",
     "ask"
   ],
+  "repository": {
+    "type" : "git",
+    "url" : "git@github.com:jntn/sure.git"
+  },
   "bin": {
     "sure": "./index.js"
   },
